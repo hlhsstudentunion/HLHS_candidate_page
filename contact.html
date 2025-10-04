@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>花中班聯會官方網站</title>
+  <meta name="description" content="需要聯絡花蓮高中班聯會？透過我們的電子郵件、地址或線上表單，快速取得聯繫並提出你的建議與疑問。">
+  
+  <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="style.css"></noscript>
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></noscript>
+</head>
+
+<body>
+    <div class="top-layer">
+        <header>
+        <h1>
+            <img src="images/Logo_HLHS.png" alt="花中班聯會 Logo" class="logo" />
+            花中班聯會官方網站
+        </h1>
+        <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="mobile-nav" id="mobile-nav">
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="about.html">關於我們</a></li>
+                <li><a href="events.html">活動資訊</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
+            </ul>
+        </nav>
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="about.html">關於我們</a></li>
+                <li><a href="events.html">活動資訊</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <main>
+            <section id="welcome" class="welcome">
+            <h2>歡迎來到花中班聯會</h2>
+            </section>
+        </main>
+
+    <main class="contact-page">
+      <section class="contact-info">
+        <h2>聯絡我們</h2>
+        <p>
+          如果你有任何疑問、建議或想與我們合作，請透過以下方式與我們聯絡，我們將會盡快回覆你。
+        </p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <h3>電子郵件</h3>
+            <p><a href="mailto:ofstud09@hlhs.hlc.edu.tw">ofstud09@hlhs.hlc.edu.tw</a></p>
+          </div>
+          <div class="contact-item">
+            <h3>地址</h3>
+            <p>花蓮縣花蓮市民權路42號</p>
+          </div>
+          <div class="contact-item">
+            <h3>社群媒體</h3>
+            <p><a href="https://www.instagram.com/hlhs_student.union?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">花中班聯會 Instagram</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-form-section">
+        <h2>線上聯絡表單</h2>
+        <p class="form-instruction">請填寫以下表單，我們將會盡快回覆。</p>
+        
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSev17vAj-ACO7TQMzTSHUowgBi87AJtvTZZCQ_OhLX8zJMdnA/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaehWp-aI4ZejkYvrgwADFoJxAJ3oW2vvGZIYVSPn8u6AxJ1mA5toGr9OFkNEw_aem_qB5ia02cL8l8IodTDNIUyg" width="100%" height="854" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
+
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>相關網站</h3>
+          <ul>
+            <li><a href="https://www.hlhs.hlc.edu.tw/" target="_blank">花蓮高中官方網站</a></li>
+            <li><a href="https://www.instagram.com/hlhs_student.union?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">花中班聯會 Instagram</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>聯絡我們</h3>
+          <p>電子郵件：<a href="mailto:ofstud09@hlhs.hlc.edu.tw">ofstud09@hlhs.hlc.edu.tw</a></p>
+          <p>地址：花蓮縣花蓮市民權路42號</p>
+        </div>
+      </div>
+    </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.getElementById('hamburger');
+        const mobileNav = document.getElementById('mobile-nav');
+
+        hamburger.addEventListener('click', function() {
+            mobileNav.classList.toggle('open');
+            hamburger.classList.toggle('is-active');
+        });
+
+        mobileNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('open');
+                hamburger.classList.remove('is-active');
+            });
+        });
+    });
+</script>
+</body>
+</html>
+
+
+

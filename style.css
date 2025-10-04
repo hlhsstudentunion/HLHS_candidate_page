@@ -1,0 +1,703 @@
+/* 預設樣式重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------ 全站通用樣式 ------------ */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ------------ 頁首與導覽列 ------------ */
+.top-layer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/HLHS_2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1rem 1rem;
+  height: 25rem;
+  color: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 1rem;
+  position: relative;
+  z-index: 1000;
+}
+
+header h1 {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.logo {
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* 桌面版導覽列樣式 */
+.desktop-nav {
+  display: block;
+}
+
+.desktop-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.desktop-nav a {
+  color: white;
+}
+
+.desktop-nav a:hover {
+  text-decoration: underline;
+}
+
+.desktop-nav a:visited {
+  color: white;
+}
+
+/* 漢堡選單樣式 */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* 行動版導覽列樣式 */
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #1a5276;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-nav.open {
+  display: block;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.mobile-nav li a {
+  display: block;
+  padding: 0.8rem 1rem;
+  color: white;
+}
+
+.mobile-nav li a:hover {
+  background-color: #154563;
+}
+
+.mobile-nav li a:visited {
+  color: white;
+}
+
+/* welcome 區塊 */
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  padding: 2rem 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* ------------ 首頁 ------------ */
+.news-wrapper {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0;
+}
+
+#news-container {
+  background-color: white;
+  padding: 0;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.news-header {
+  background-color: #1a5276;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  margin: 0 auto 1.5rem auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.news-header h2 {
+  font-size: 2.2rem;
+}
+
+.news-content {
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.news-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.news-item {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* ------------ 關於我們 ------------ */
+.about-page {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.about-hero {
+  text-align: center;
+  background-color: #e5eaf0;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1a5276;
+}
+
+/* 修正：為 .about-hero 區塊內的 p 標籤設定文字顏色 */
+.about-hero p {
+  color: #333;
+}
+
+.mission {
+  margin-bottom: 2rem;
+}
+
+/* 新增：為 .mission 區塊內的 h2 設定文字顏色 */
+.mission h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1a5276;
+}
+
+.mission-content {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mission-item {
+  flex: 1 1 300px;
+  background-color: #e5eaf0;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* 新增：為 .mission-item 區塊內的 p 標籤設定文字顏色 */
+.mission-item p {
+  color: #333;
+}
+.mission-item h3 {
+  color: #1a5276;
+}
+
+.organization {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.organization p {
+  color: #333;
+}
+
+.organization img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.organization h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1a5276;
+}
+
+.team {
+  margin-bottom: 2rem;
+}
+
+.team h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1a5276;
+}
+
+.team-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.team-member.leader {
+  flex: 1 1 250px;
+  max-width: 400px;
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* 修正：為 .leader 區塊內的 h3 和 p 標籤設定文字顏色 */
+.team-member.leader h3,
+.team-member.leader p {
+  color: #333;
+}
+
+.team-member.leader-solo {
+  width: 100%;
+  max-width: 400px;
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* 修正：為 .leader-solo 區塊內的 h3 和 p 標籤設定文字顏色 */
+.team-member.leader-solo h3,
+.team-member.leader-solo p {
+  color: #333;
+}
+
+/* ------------ 活動資訊頁面 ------------ */
+.event-page {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.events-outline {
+  margin-bottom: 2rem;
+}
+
+.events-outline h2 {
+  color: #1a5276;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.event-item {
+  display: flex;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.event-date {
+  background-color: #1a5276;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  min-width: 80px;
+}
+
+.event-date .month {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.event-date .day {
+  display: block;
+  font-size: 1.8rem;
+}
+
+.event-details h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.event-details p {
+  color: #555;
+  margin: 0;
+}
+
+/* 相關活動區塊 */
+.related-events {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.related-events h2 {
+  font-size: 2rem;
+  color: #1a5276;
+  margin-bottom: 1.5rem;
+}
+
+.event-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.related-event-item {
+  background-color: #e9ecef;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  flex: 1 1 250px;
+  max-width: 350px;
+}
+
+/* 新增：為 .related-event-item 區塊內的 p 標籤設定文字顏色 */
+.related-event-item p {
+  color: #333;
+}
+
+/* ------------ 聯絡我們頁面 ------------ */
+.contact-page {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.contact-info,
+.contact-form-section {
+  background-color: #f8f9fa;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact-info h2,
+.contact-form-section h2 {
+  color: #1a5276;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact-item {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  flex: 1 1 200px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 120px;
+}
+
+.contact-item h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.contact-item p {
+  text-align: center;
+}
+
+.contact-item a {
+  color: #1a5276;
+  font-weight: bold;
+}
+
+/* 修正連結顏色問題 */
+.contact-item a:visited {
+  color: #1a5276;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* 表單樣式 */
+.form-instruction {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.contact-form-section iframe {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ------------ 頁腳 ------------ */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.footer-section {
+  margin: 1rem;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 2px solid white;
+  padding-bottom: 0.5rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section a {
+  color: white;
+  line-height: 1.8;
+}
+
+.footer-section a:visited {
+  color: white;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  text-align: center;
+  border-top: 1px solid #555;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  /* 導覽列和頁首 */
+  .desktop-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  header {
+    flex-direction: row;
+    text-align: center;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .mobile-nav.open {
+    display: block;
+    top: 60px;
+  }
+  
+  /* Welcome 區塊優化 */
+  .welcome h2 {
+    font-size: 1.5rem; /* 縮小標題字體 */
+  }
+
+  /* 關於我們頁面 */
+  .about-hero {
+    padding: 2rem 1rem;
+  }
+
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .mission-content {
+    flex-direction: column;
+  }
+
+  .mission h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1a5276;
+}
+  .mission-item h3 {
+  color: #1a5276; /* 為標題設定一個深色，例如與頁首標題相同的顏色 */
+}
+
+  .mission-item p {
+  color: #333; /* 為段落文字設定深灰色 */
+}
+
+  /* 團隊成員區塊 */
+  .team-member.leader {
+    flex: 1 1 90%;
+    margin: 0.5rem auto;
+    width: 90%;
+  }
+
+  .team-member.leader-solo {
+    margin: 0.5rem auto;
+    width: 90%;
+  }
+
+  /* 最新消息區塊 (針對 index.html 優化) */
+  .news-wrapper {
+    width: 95%; /* 確保左右留白 */
+    padding: 0 0.5rem; /* 增加內邊距 */
+  }
+  
+  .news-header {
+      padding: 1rem; /* 縮小標頭內邊距 */
+      margin-bottom: 1rem;
+  }
+
+  .news-header h2 {
+      font-size: 1.8rem; /* 縮小標題字體 */
+  }
+
+  #news-container {
+    box-shadow: none; /* 在手機上可以移除陰影，更簡潔 */
+    border-radius: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .news-content {
+    padding: 1rem; /* 縮小內容區塊內邊距 */
+    border-radius: 4px;
+  }
+
+  .news-item {
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .news-title {
+      font-size: 1.2rem;
+      margin-bottom: 0.4rem;
+  }
+  
+  .news-text {
+      font-size: 0.95rem;
+  }
+
+
+  /* 頁腳 */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin: 1rem 0;
+  }
+
+  /* 活動資訊頁面 */
+  .event-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* 聯絡我們頁面 */
+  .contact-info,
+  .contact-form-section {
+    padding: 1.5rem;
+  }
+
+  .contact-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-item {
+    width: 80%;
+    margin-bottom: 1rem;
+    min-height: auto;
+  }
+}

@@ -14,7 +14,7 @@
 ---
 
 ## 🌐 網站連結
-👉 [點我前往班聯會網站](https://ouovovo0131.github.io/HLHS_candidate_page/)  
+👉 [點我前往班聯會網站](https:/hlhsstudentunion.github.io/HLHS_candidate_page/)  
 
 ---
 
